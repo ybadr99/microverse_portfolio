@@ -18,7 +18,9 @@
   width: 3.2rem;
   height: 3px;
 }
+
 /* LANDING SECTION */
+
 .section-landing {
   background-image: url("../images/header-illsutration-mobile.png");
   background-repeat: no-repeat;
@@ -94,6 +96,7 @@
   text-align: center;
   margin-bottom: 3.2rem;
 }
+
 .section-works .separate {
   margin: 3.2rem auto;
   height: 5px;
