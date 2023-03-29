@@ -181,20 +181,69 @@
           </div>
         </section>
       </section>
-      <section class="cotact-form">
-      <h1>Contact me</h1>
-      <p>
-        If you have an application you are interested in developing, a feature
-        that you need built or a project that needs coding. I’d love to help
-        with it!
-      </p>
-      <form action="#">
-        <input type="text" id="name" name="" />
-        <input type="email" placeholder="Enter your e-mail"/>
-        <textarea name="" id="" cols="30" rows="10" maxlength="500" placeholder="Write your message here"></textarea>
-        <button>Submit</button>
-      </form>
-    </section>
+
+      <section class="section-contact">
+        <div class="container">
+          <p class="contact-description">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+          <form
+            class="form"
+            action="https://formspree.io/f/xpzewdnr"
+            method="post"
+          >
+            <div class="form-control">
+              <input required type="text" id="name" placeholder="Full name" />
+            </div>
+            <div class="form-control">
+              <input required type="email" placeholder="Email address" />
+            </div>
+            <div class="form-control">
+              <textarea
+                required
+                id=""
+                cols="30"
+                rows="6"
+                maxlength="500"
+                placeholder="Hey I'd like to connect to ..."
+              ></textarea>
+            </div>
+            <button class="btn">Get in touch</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <p class="email">yousefbadr909@gmail.com</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><img src="./images/socials/twitter.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/socials/Linkedin icon.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/socials/medium.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/socials/github.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/socials/angellist.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <img
+        src="./images/illustration-contact-form.png"
+        class="footer-illustration"
+        alt=""
+      />
+    </footer>
   </body>
 </html>
