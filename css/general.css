@@ -34,7 +34,8 @@ ul {
 }
 
 .btn,
-.btn:link {
+.btn:link,
+.btn:visited {
   font-size: 2rem;
   font-weight: 500;
   text-decoration: none;
@@ -48,12 +49,11 @@ ul {
   border: none;
 }
 
-.btn:hover,
 .btn:active {
-  background-color: #4abb8b;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #008552;
 }
 
-.btn:visited {
-  background-color: #267d58;
+.btn:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
