@@ -32,6 +32,7 @@ ul {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -45,9 +46,6 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
-}
-
-.btn {
   border: none;
 }
 
