@@ -32,3 +32,28 @@ ul {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.btn:active {
+  background-color: #008552;
+}
+
+.btn:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}

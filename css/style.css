@@ -141,26 +141,6 @@
   padding: 1.2rem;
 }
 
-.btn:link,
-.btn:visited {
-  font-size: 2rem;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 1.2rem 2.4rem;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #4abb8b;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
 /* WORKS SECTION */
 .about-header {
   background-image: url("../images/illustration-\ about\ me-\ mobile.png");
@@ -216,4 +196,66 @@
   color: var(--secondary-color);
   padding: 1rem;
   border-radius: 8px;
+}
+
+/* CONTACT SECTION */
+
+.section-contact {
+  padding: 3.2rem 0;
+}
+
+.contact-description {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control input,
+textarea {
+  width: 100%;
+  font-size: 1.4rem;
+  font-style: italic;
+  border: 2px solid #dfe1e6;
+  border-radius: 4px;
+  padding: 1.2rem;
+}
+
+textarea {
+  font-style: normal;
+  border: 1px solid #60c095;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+  color: #42526e;
+  position: relative;
+}
+
+.footer-illustration {
+  background-image: url("../images/illustration-contact-form.png");
+  position: absolute;
+  top: -9rem;
+  right: 0;
+}
+
+footer .email {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
 }
