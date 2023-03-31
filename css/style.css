@@ -2,11 +2,12 @@
 .navbar {
   width: 100%;
 }
+
 .menu-icon {
-  float: right;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  float: right;
 }
 
 .menu-icon span {
@@ -20,7 +21,6 @@
 .nav-items {
   display: none;
   gap: 3.2rem;
-  display: none;
   justify-content: center;
   z-index: -1;
 }
@@ -28,7 +28,7 @@
 .nav-items li a {
   text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #344563;
 }
 
@@ -51,7 +51,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
   z-index: -1;
 }
 
@@ -76,7 +75,6 @@
 }
 
 .center {
-  /* margin: 0; */
   width: 100%;
   position: absolute;
   top: 50%;
@@ -86,7 +84,6 @@
 }
 
 .socials {
-  list-style: none;
   display: flex;
   gap: 1.6rem;
   align-items: center;
@@ -101,7 +98,6 @@
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 9.6rem;
-
   background-image: url("../images/arrow-down.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -263,6 +259,7 @@
     padding: 0;
     max-width: 70%;
   }
+
   .illus1 img {
     float: right;
   }
@@ -391,6 +388,7 @@ textarea {
     bottom: -145px;
     right: 0;
   }
+
   .contact-illus1 img,
   .contact-illus2 img {
     max-width: 70%;
@@ -422,7 +420,7 @@ footer .email {
   margin-bottom: 3.2rem;
 }
 
-footer .separate {
+footer .hr {
   display: none;
 }
 
@@ -435,12 +433,10 @@ footer .separate {
     display: none;
   }
 
-  /* padding: 1.2rem 0; */
-  footer .separate {
+  footer .hr {
     display: block;
     background-color: #dfe1e6;
     height: 1px;
-    display: block;
     margin-bottom: 1.2rem;
   }
 }
