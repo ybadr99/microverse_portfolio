@@ -197,14 +197,8 @@
 
 .techs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 4.8rem;
-}
-
-@media (min-width: 768px) {
-  .techs {
-    padding: 0 2.4rem;
-  }
 }
 
 .techs-item {
@@ -226,10 +220,12 @@
 }
 
 .about-header {
-  background-image: url("../images/illustration-\ about\ me-\ mobile.png");
-  background-size: cover;
+  background:
+    url("../images/illustration-about-me-1-desktop.png") no-repeat
+    right top,
+    url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
+  background-size: 15%;
   padding: 4.8rem 0;
-  position: relative;
 }
 
 .about-header .container {
@@ -243,17 +239,6 @@
   font-weight: 400;
   line-height: 1.4;
   color: #42526e;
-}
-
-.about-header {
-  background: url("../images/illustration-about-me-1-desktop.png") no-repeat
-      right top,
-    url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
-  background-size: 15%;
-}
-
-.about-text {
-  max-width: 75%;
 }
 
 .skills {
@@ -338,7 +323,8 @@ textarea {
 
 @media (min-width: 768px) {
   .section-contact {
-    background: url("../images/contact-illus\ 02.png") no-repeat left bottom,
+    background:
+      url("../images/contact-illus\ 02.png") no-repeat left bottom,
       url("../images/contact-illus\ 03.png") no-repeat right top;
     background-size: contain;
   }
