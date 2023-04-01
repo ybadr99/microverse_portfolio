@@ -18,20 +18,27 @@
     <title>Yousef Badr</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar container">
-        <div class="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-
     <main>
-      <section class="section-landing">
-        <div class="container">
-          <!-- header-content -->
+      <section class="landing">
+        <header>
+          <nav class="navbar">
+            <div class="container">
+              <ul class="nav-items">
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#works">About</a></li>
+                <li><a href="#works">Contact</a></li>
+              </ul>
+
+              <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <div class="container center">
           <h1 class="primary-heading">
             Hey there. <br />I’m Alex. <span>I’m a software developer</span>
           </h1>
@@ -61,13 +68,9 @@
               /></a>
             </li>
           </ul>
-
-          <a href="#" class="arrow-down">
-            <!-- <img src="./images/arrow-down.png" alt="" /> -->
-          </a>
+          <a href="#" class="arrow-down"></a>
         </div>
       </section>
-
       <section class="section-works">
         <div class="container">
           <h2 class="secondary-heading">
@@ -75,8 +78,46 @@
             Works
           </h2>
           <p class="separate"></p>
+        </div>
+        <div class="container grid">
           <div class="project">
-            <img src="./images/projects/project04.png" alt="" />
+            <img src="./images/projects/project03.png" alt="" />
+            <h3 class="project-heading">Multi-Post Stories Gain+Glory</h3>
+            <ul class="techs">
+              <li class="techs-item">Ruby on Rails</li>
+              <li class="techs-item">CSS</li>
+              <li class="techs-item">JavaScript</li>
+              <li class="techs-item">HTML</li>
+            </ul>
+
+            <a href="#" class="btn">See project</a>
+          </div>
+          <div class="project">
+            <img src="./images/projects/project03.png" alt="" />
+            <h3 class="project-heading">Multi-Post Stories Gain+Glory</h3>
+            <ul class="techs">
+              <li class="techs-item">Ruby on Rails</li>
+              <li class="techs-item">CSS</li>
+              <li class="techs-item">JavaScript</li>
+              <li class="techs-item">HTML</li>
+            </ul>
+
+            <a href="#" class="btn">See project</a>
+          </div>
+          <div class="project">
+            <img src="./images/projects/project03.png" alt="" />
+            <h3 class="project-heading">Multi-Post Stories Gain+Glory</h3>
+            <ul class="techs">
+              <li class="techs-item">Ruby on Rails</li>
+              <li class="techs-item">CSS</li>
+              <li class="techs-item">JavaScript</li>
+              <li class="techs-item">HTML</li>
+            </ul>
+
+            <a href="#" class="btn">See project</a>
+          </div>
+          <div class="project">
+            <img src="./images/projects/project03.png" alt="" />
             <h3 class="project-heading">Multi-Post Stories Gain+Glory</h3>
             <ul class="techs">
               <li class="techs-item">Ruby on Rails</li>
@@ -100,21 +141,9 @@
 
             <a href="#" class="btn">See project</a>
           </div>
-          <div class="project">
-            <img src="./images/projects/project02.png" alt="" />
-            <h3 class="project-heading">Multi-Post Stories Gain+Glory</h3>
-            <ul class="techs">
-              <li class="techs-item">Ruby on Rails</li>
-              <li class="techs-item">CSS</li>
-              <li class="techs-item">JavaScript</li>
-              <li class="techs-item">HTML</li>
-            </ul>
-
-            <a href="#" class="btn">See project</a>
-          </div>
 
           <div class="project">
-            <img src="./images/projects/project01.png" alt="" />
+            <img src="./images/projects/project03.png" alt="" />
             <h3 class="project-heading">Multi-Post Stories Gain+Glory</h3>
             <ul class="techs">
               <li class="techs-item">Ruby on Rails</li>
@@ -144,7 +173,7 @@
 
         <section class="about-content">
           <div class="container">
-            <ul class="skills">
+            <ul class="skills grid">
               <li class="skill-item">
                 <img src="./images/icon01.png" alt="" />
                 <h5>Languages</h5>
@@ -231,34 +260,29 @@
     </main>
 
     <footer>
-      <div class="container">
-        <p class="email">yousefbadr909@gmail.com</p>
-        <ul class="socials">
-          <li>
-            <a href="#"><img src="./images/socials/twitter.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/socials/Linkedin icon.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/socials/medium.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/socials/github.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/socials/angellist.png" alt="" /></a>
-          </li>
-        </ul>
-      </div>
+      <p class="email">yousefbadr909@gmail.com</p>
 
-      <img
-        src="./images/illustration-contact-form.png"
-        class="footer-illustration"
-        alt=""
-      />
+      <span class="hr"></span>
+
+      <ul class="socials">
+        <li>
+          <a href="#"><img src="./images/socials/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/socials/Linkedin icon.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/socials/medium.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/socials/github.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/socials/angellist.png" alt="" /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
