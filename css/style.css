@@ -173,12 +173,17 @@
   border-radius: 10px;
   text-align: center;
   padding-bottom: 3.6rem;
+  overflow: hidden;
 }
 
 .project img {
   width: 100%;
   margin-bottom: 3.2rem;
-  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.project img:hover {
+  transform: scale(1.2);
 }
 
 .project-heading {
@@ -192,14 +197,8 @@
 
 .techs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 4.8rem;
-}
-
-@media (min-width: 768px) {
-  .techs {
-    padding: 0 2.4rem;
-  }
 }
 
 .techs-item {
@@ -221,10 +220,12 @@
 }
 
 .about-header {
-  background-image: url("../images/illustration-\ about\ me-\ mobile.png");
-  background-size: cover;
+  background:
+    url("../images/illustration-about-me-1-desktop.png") no-repeat
+    right top,
+    url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
+  background-size: 15%;
   padding: 4.8rem 0;
-  position: relative;
 }
 
 .about-header .container {
@@ -238,25 +239,6 @@
   font-weight: 400;
   line-height: 1.4;
   color: #42526e;
-}
-
-.illus1,
-.illus2 {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .about-header {
-    background:
-      url("../images/illustration-about-me-1-desktop.png") no-repeat
-      right top,
-      url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
-    background-size: 15%;
-  }
-
-  .about-text {
-    max-width: 75%;
-  }
 }
 
 .skills {
@@ -325,17 +307,18 @@ textarea {
   border-radius: 4px;
   padding: 1.2rem;
   margin-bottom: 1.2rem;
+  transition: all 0.3s;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  transform: translateX(2rem);
 }
 
 textarea {
   font-style: normal;
   border: 1px solid #60c095;
-}
-
-.form .btn {
-  /* display: block; */
-
-  /* width: 50%; */
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
