@@ -59,8 +59,6 @@
 
 ## 🚀 Live Demo <a name="live-demo">https://ybadr99.github.io/portfolio/</a>
 
-> Not yet
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
