@@ -24,8 +24,16 @@ body {
   color: var(--main-color);
 }
 
+.hidden-flow {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {

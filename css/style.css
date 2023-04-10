@@ -1,6 +1,10 @@
 /* HEADER SECTION */
 .navbar {
-  width: 100%;
+  height: 7rem;
+  padding: 3.2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
 }
 
 .menu-icon {
@@ -8,36 +12,82 @@
   flex-direction: column;
   gap: 0.4rem;
   float: right;
+  transition: 0.3s;
 }
 
 .menu-icon span {
   display: block;
   background-color: var(--main-color);
-  width: 3.2rem;
-  height: 3px;
-  border-radius: 3px;
+  width: 3rem;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.menu-icon.active span {
+  background-color: #67798e;
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav-items {
   display: none;
   gap: 3.2rem;
   justify-content: center;
-  z-index: -1;
 }
 
-.nav-items li a {
-  text-decoration: none;
+.nav-item {
   font-size: 1.6rem;
   font-weight: 600;
   color: #344563;
+  transition: 0.3s;
 }
 
-.nav-items li a:hover {
+.nav-item:hover {
   color: var(--main-color);
 }
 
+.mobile-nav-items {
+  position: fixed;
+  top: 7rem;
+  left: -100%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  transition: 0.2s;
+}
+
+.mobile-nav-items li {
+  margin-bottom: 3.2rem;
+}
+
+.mobile-nav-items a {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #3a4a42;
+  line-height: 1.2;
+}
+
+.mobile-nav-items a:hover {
+  color: #3a4a42f0;
+}
+
+.mobile-nav-items.active {
+  left: 0;
+}
+
 @media (min-width: 768px) {
-  .menu-icon {
+  .navbar {
     display: none;
   }
 
@@ -223,9 +273,8 @@
 }
 
 .about-header {
-  background:
-    url("../images/illustration-about-me-1-desktop.png") no-repeat
-    right top,
+  background: url("../images/illustration-about-me-1-desktop.png") no-repeat
+      right top,
     url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
   background-size: 15%;
   padding: 4.8rem 0;
@@ -331,8 +380,7 @@ textarea {
 
 @media (min-width: 768px) {
   .section-contact {
-    background:
-      url("../images/contact-illus\ 02.png") no-repeat left bottom,
+    background: url("../images/contact-illus\ 02.png") no-repeat left bottom,
       url("../images/contact-illus\ 03.png") no-repeat right top;
     background-size: contain;
     background-size: 10%;
