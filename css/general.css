@@ -14,6 +14,7 @@
 html {
   /* font-size: 10px - 10px / 16px =0.625 = 62.5% - percentage of user's browsers font-size setting - 1rem = 10 px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
