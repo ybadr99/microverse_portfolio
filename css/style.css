@@ -15,7 +15,7 @@
   transition: 0.3s;
 }
 
-.menu-icon span {
+.menu-icon .bar {
   display: block;
   background-color: var(--main-color);
   width: 3rem;
@@ -23,19 +23,19 @@
   border-radius: 4px;
 }
 
-.menu-icon.active span {
+.menu-icon.active .bar {
   background-color: #67798e;
 }
 
-.menu-icon.active span:nth-child(2) {
+.menu-icon.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.menu-icon.active span:nth-child(1) {
+.menu-icon.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.menu-icon.active span:nth-child(3) {
+.menu-icon.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -273,8 +273,9 @@
 }
 
 .about-header {
-  background: url("../images/illustration-about-me-1-desktop.png") no-repeat
-      right top,
+  background:
+    url("../images/illustration-about-me-1-desktop.png") no-repeat
+    right top,
     url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
   background-size: 15%;
   padding: 4.8rem 0;
@@ -380,7 +381,8 @@ textarea {
 
 @media (min-width: 768px) {
   .section-contact {
-    background: url("../images/contact-illus\ 02.png") no-repeat left bottom,
+    background:
+      url("../images/contact-illus\ 02.png") no-repeat left bottom,
       url("../images/contact-illus\ 03.png") no-repeat right top;
     background-size: contain;
     background-size: 10%;
