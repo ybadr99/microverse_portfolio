@@ -331,7 +331,8 @@ textarea {
 
 @media (min-width: 768px) {
   .section-contact {
-    background: url("../images/contact-illus\ 02.png") no-repeat left bottom,
+    background:
+      url("../images/contact-illus\ 02.png") no-repeat left bottom,
       url("../images/contact-illus\ 03.png") no-repeat right top;
     background-size: contain;
     background-size: 10%;
@@ -357,6 +358,7 @@ textarea {
     background: none;
   }
 }
+
 /* FOOTER */
 footer {
   text-align: center;
