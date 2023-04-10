@@ -57,9 +57,7 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Not yet
+## 🚀 Live Demo <a name="live-demo">https://ybadr99.github.io/portfolio/</a>
 
 <!-- GETTING STARTED -->
 
