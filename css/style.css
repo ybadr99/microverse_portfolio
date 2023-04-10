@@ -58,7 +58,7 @@
 
 .mobile-nav-items {
   position: fixed;
-  top: 7rem;
+  top: 0;
   left: -100%;
   background-color: white;
   width: 100%;
