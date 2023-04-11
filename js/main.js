@@ -8,10 +8,9 @@ menuIcon.addEventListener('click', () => {
   document.body.classList.toggle('hidden-flow');
 });
 
-navItem.forEach((n) => {
-  n.addEventListener('click', () => {
+window.onscroll = () =>{
     menuIcon.classList.remove('active');
     mobileMenu.classList.remove('active');
     document.body.classList.remove('hidden-flow');
-  });
-});
+}
+
