@@ -1,3 +1,29 @@
+// HELPERS
+const createElement = (tag, className) => {
+  const el = document.createElement(tag);
+  el.classList.add(className);
+  return el;
+};
+
+const createList = (items, className) => {
+  const ul = createElement('ul', className);
+  items.forEach((item) => {
+    const li = createElement('li', `${className}-item`);
+    li.innerText = item;
+    ul.appendChild(li);
+  });
+
+  return ul;
+};
+
+const createButton = (className, id, text) => {
+  const btn = createElement('button', className);
+  btn.classList = 'btn see-project';
+  btn.id = id;
+  btn.innerText = text;
+  return btn;
+};
+
 // -- projects section
 const projects = [
   {
@@ -87,14 +113,14 @@ const createProject = (project) => {
   const img = createElement('img', 'project-img');
   img.src = project.featuredImage;
   projectEl.appendChild(img);
-  
+
   const name = createElement('h3', 'project-heading');
   name.innerText = project.name;
   projectEl.appendChild(name);
-  
+
   const techs = createList(project.technologies, 'techs');
   projectEl.appendChild(techs);
-  
+
   const btn = createButton('see-project', project.id, 'See project');
   projectEl.appendChild(btn);
 
@@ -102,12 +128,12 @@ const createProject = (project) => {
 };
 
 const renderPopup = (project) => {
+  const techs = createList(project.technologies, 'techs');
 
-const techs = createList(project.technologies, 'techs');
-
-return `
+  return `
     <div class="img-box">
       <img
+      class="popup-img"
       src='${project.featuredImage}'
       alt=""
       />  
@@ -139,14 +165,8 @@ return `
       </ul>
     </div>
     
-    `
-  
-  };
-
-
-
-
-
+    `;
+};
 
 window.onload = () => {
   projects.forEach((project) => {
@@ -162,7 +182,6 @@ window.onload = () => {
     });
   });
 };
-
 
 close.onclick = () => {
   modal.style.display = 'none';

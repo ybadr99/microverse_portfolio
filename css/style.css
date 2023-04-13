@@ -273,8 +273,9 @@
 }
 
 .about-header {
-  background: url("../images/illustration-about-me-1-desktop.png") no-repeat
-      right top,
+  background:
+    url("../images/illustration-about-me-1-desktop.png") no-repeat
+    right top,
     url("../images/illustration-about-me-2-desktop.png") no-repeat left bottom;
   background-size: 15%;
   padding: 4.8rem 0;
@@ -380,7 +381,8 @@ textarea {
 
 @media (min-width: 768px) {
   .section-contact {
-    background: url("../images/contact-illus\ 02.png") no-repeat left bottom,
+    background:
+      url("../images/contact-illus\ 02.png") no-repeat left bottom,
       url("../images/contact-illus\ 03.png") no-repeat right top;
     background-size: contain;
     background-size: 10%;
@@ -487,7 +489,7 @@ footer .hr {
   padding: 1.4rem 0;
 }
 
-.img-box img {
+.img-box .popup-img {
   width: 100%;
 }
 
@@ -527,6 +529,7 @@ footer .hr {
     right: 0;
   }
 }
+
 .modal-container .btn {
   font-size: 1.4rem;
   padding: 1.2rem 1.6rem;
