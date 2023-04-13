@@ -141,7 +141,22 @@ const renderPopup = (project) => {
 
     <div class="content-box">
       <h5>${project.name}</h5>
-      
+
+      <ul class="btn-wraper">
+      <li>
+        <a href="${project.liveLink}" class="btn">
+          See live
+          <img src="./images/Icon - Export.svg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="${project.sourceLink}" class="btn">
+          See source
+          <img src="./images/Icon -GitHub.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+
       ${techs.outerHTML}
 
       
@@ -149,20 +164,7 @@ const renderPopup = (project) => {
         ${project.description}
       </p>
 
-      <ul class="btn-warper">
-        <li>
-          <a href="${project.liveLink}" class="btn">
-            See live
-            <img src="./images/Icon - Export.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="${project.sourceLink}" class="btn">
-            See source
-            <img src="./images/Icon -GitHub.svg" alt="" />
-          </a>
-        </li>
-      </ul>
+
     </div>
     
     `;
