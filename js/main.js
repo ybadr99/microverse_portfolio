@@ -82,79 +82,71 @@ navItem.forEach((n) => {
 });
 
 const createProject = (project) => {
-  const projectEl = document.createElement('div');
-  projectEl.classList.add('project');
+  const projectEl = createElement('div', 'project');
 
-  const img = document.createElement('img');
+  const img = createElement('img', 'project-img');
   img.src = project.featuredImage;
-
-  const name = document.createElement('h3');
-  name.classList.add('project-heading');
-  name.innerText = project.name;
-
-  const ul = document.createElement('ul');
-  ul.classList.add('techs');
-
-  project.technologies.forEach((el) => {
-    const li = document.createElement('li');
-    li.classList.add('techs-item');
-
-    li.innerText = el;
-    ul.appendChild(li);
-  });
-
-  const btn = document.createElement('button');
-  btn.classList = 'btn see-project';
-  btn.id = project.id;
-  btn.innerText = 'See project';
-
   projectEl.appendChild(img);
+  
+  const name = createElement('h3', 'project-heading');
+  name.innerText = project.name;
   projectEl.appendChild(name);
-  projectEl.appendChild(ul);
+  
+  const techs = createList(project.technologies, 'techs');
+  projectEl.appendChild(techs);
+  
+  const btn = createButton('see-project', project.id, 'See project');
   projectEl.appendChild(btn);
 
   return projectEl;
 };
 
-// const modalContainer = document.querySelector('.modal-container')
-const renderPopup = (project) => `
+const renderPopup = (project) => {
 
-  <div class="img-box">
-    <img
-    src='${project.featuredImage}'
-    class="popup-img"
-    alt=""
-    />  
-  </div>
+const techs = createList(project.technologies, 'techs');
 
-  <h5>${project.name}</h5>
+return `
+    <div class="img-box">
+      <img
+      src='${project.featuredImage}'
+      alt=""
+      />  
+    </div>
+
+    <div class="content-box">
+      <h5>${project.name}</h5>
+      
+      ${techs.outerHTML}
+
+      
+      <p>
+        ${project.description}
+      </p>
+
+      <ul class="btn-warper">
+        <li>
+          <a href="${project.liveLink}" class="btn">
+            See live
+            <img src="./images/Icon - Export.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="${project.sourceLink}" class="btn">
+            See source
+            <img src="./images/Icon -GitHub.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    `
   
-  <ul class="techs">
-    <li class="techs-item">Ruby on Rails</li>
-    <li class="techs-item">CSS</li>
-    <li class="techs-item">JavaScript</li>
-  </ul>
+  };
 
-  <p>
-    ${project.description}
-  </p>
 
-  <ul>
-    <li>
-      <a href="${project.liveLink}" class="btn">
-        See live
-        <img src="./images/Icon - Export.svg" alt="" />
-      </a>
-    </li>
-    <li>
-      <a href="${project.sourceLink}" class="btn">
-        See source
-        <img src="./images/Icon -GitHub.svg" alt="" />
-      </a>
-    </li>
-  </ul>
 
-`;
+
+
 
 window.onload = () => {
   projects.forEach((project) => {
@@ -171,14 +163,13 @@ window.onload = () => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  close.onclick = () => {
-    modal.style.display = 'none';
-  };
 
-  window.onclick = (e) => {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
-  };
-});
+close.onclick = () => {
+  modal.style.display = 'none';
+};
+
+window.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+};
