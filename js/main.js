@@ -171,7 +171,7 @@ window.onload = () => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   close.onclick = () => {
     modal.style.display = 'none';
   };
