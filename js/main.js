@@ -237,8 +237,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
-//Perserve data into localstorage
+// Perserve data into localstorage
 const inputs = ['name', 'email', 'message'];
 
 let formData = JSON.parse(localStorage.getItem('formData'));
@@ -266,4 +265,4 @@ window.addEventListener('load', () => {
       }
     });
   }
-}); 
+});
