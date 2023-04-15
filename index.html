@@ -166,7 +166,6 @@
           >
             <div class="form-control">
               <input
-                required
                 type="text"
                 id="name"
                 minlength="3"
@@ -175,25 +174,27 @@
                 max-length="3"
                 placeholder="Full name"
               />
+              <small></small>
             </div>
             <div class="form-control">
               <input
-                required
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Email address"
               />
+              <small></small>
             </div>
             <div class="form-control">
               <textarea
                 name="message"
-                required
-                id=""
+                id="message"
                 cols="30"
                 rows="6"
                 maxlength="500"
                 placeholder="Hey I'd like to connect to ..."
               ></textarea>
+              <small></small>
             </div>
             <button class="btn">Get in touch</button>
           </form>
@@ -242,7 +243,6 @@
       </div>
     </div>
 
-    <script src="./js/helpers.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
