@@ -258,3 +258,12 @@ inputs.forEach((el) => {
 });
 
 // pass the formData to the input field
+window.addEventListener('load', () => {
+  if (formData) {
+    inputs.forEach((el) => {
+      if (formData[el]) {
+        form.elements[el].value = formData[el];
+      }
+    });
+  }
+}); 
