@@ -196,9 +196,43 @@ window.onclick = (e) => {
 };
 
 // Form Validation
-const form = document.querySelector('.form')
-const name = document.querySelector('#name')
-const email = document.querySelector('#email')
-const message = document.querySelector('#message')
+const form = document.querySelector('.form');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+// show a message with a type of the input
+function showMessage(input, message, type) {
+  // get the <small> element and set the message
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+  // update the class for the input
+  input.className = type ? '' : 'error';
+}
+
 form.addEventListener('submit', (e) => {
-})
+  // validate inputs
+  if (name.value.trim().length === 0) {
+    e.preventDefault();
+    showMessage(name, 'Please enter a valid name', false);
+  } else {
+    showMessage(name, '', true);
+  }
+
+  if (message.value.trim().length === 0) {
+    e.preventDefault();
+    showMessage(message, 'Please enter a valid text', false);
+  } else {
+    showMessage(message, '', true);
+  }
+
+  if (
+    email.value.trim().length === 0
+  || email.value.trim().toLowerCase() !== email.value.trim()
+  ) {
+    e.preventDefault();
+    showMessage(email, 'Please enter a valid Email', false);
+  } else {
+    showMessage(email, '', true);
+  }
+});
