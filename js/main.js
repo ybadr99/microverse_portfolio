@@ -236,3 +236,33 @@ form.addEventListener('submit', (e) => {
     showMessage(email, '', true);
   }
 });
+
+// Perserve data into localstorage
+const inputs = ['name', 'email', 'message'];
+
+let formData = JSON.parse(localStorage.getItem('formData'));
+if (!formData) {
+  localStorage.setItem('formData', JSON.stringify((formData = {})));
+}
+
+const saveToLocalStorage = () => {
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+inputs.forEach((el) => {
+  form.elements[el].addEventListener('keyup', (e) => {
+    formData[el] = e.target.value;
+    saveToLocalStorage();
+  });
+});
+
+// pass the formData to the input field
+window.addEventListener('load', () => {
+  if (formData) {
+    inputs.forEach((el) => {
+      if (formData[el]) {
+        form.elements[el].value = formData[el];
+      }
+    });
+  }
+});
