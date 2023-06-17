@@ -57,7 +57,7 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo">https://ybadr99.github.io/portfolio/</a>
+## 🚀 Live Demo <a name="live-demo">https://ybadr99.github.io/microverse_portfolio/</a>
 
 <!-- GETTING STARTED -->
 
